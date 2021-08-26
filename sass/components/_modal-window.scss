@@ -3,14 +3,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // width: 528px;
-  // min-height: 581px;
-  width: 96vw;
-  height: 96vh;
+  width: 528px;
+  min-height: 581px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   overflow: auto;
+}
+
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 96vw;
+    height: 96vh;
+    }
 }
 
 .close-button {
