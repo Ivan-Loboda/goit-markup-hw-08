@@ -1,0 +1,158 @@
+.article_sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+}
+
+.article_text {
+  line-height: 1.71;
+}
+
+.article_item {
+  // margin: 0 auto;
+  width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) {
+  .article_item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .article_item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .article_item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_item {
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_item:not(:last-child) {
+      margin-right: 30px;
+  }
+}
+
+
+
+
+
+/* =========иконки========= */
+.article_sub-title.first::before {
+  content: "";
+  display: block;
+  max-width: 450px;
+  height: 120px;
+  background-image: url("../images/main/antenna.svg");
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_sub-title.first::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_sub-title.first::before {
+    max-width: 270px;
+  }
+}
+
+.article_sub-title.second::before {
+  content: "";
+  display: block;
+  max-width: 450px;
+  height: 120px;
+  background-image: url("../images/main/clock.svg");
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_sub-title.second::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_sub-title.second::before {
+    max-width: 270px;
+  }
+}
+
+.article_sub-title.third::before {
+  content: "";
+  display: block;
+  max-width: 450px;
+  height: 120px;
+  background-image: url("../images/main/diagram.svg");
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_sub-title.third::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_sub-title.third::before {
+    max-width: 270px;
+  }
+}
+
+.article_sub-title.fourth::before {
+  content: "";
+  display: block;
+  max-width: 450px;
+  height: 120px;
+  background-image: url("../images/main/astronaut.svg");
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_sub-title.fourth::before {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article_sub-title.fourth::before {
+    max-width: 270px;
+  }
+}

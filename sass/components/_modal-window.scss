@@ -1,0 +1,39 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 528px;
+  // min-height: 581px;
+  width: 96vw;
+  height: 96vh;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal_button-close {
+  fill: #000000;
+  .close-button:hover >&,
+  .close-button:focus >& {
+    fill: var(--accent-color);
+  }
+}
+

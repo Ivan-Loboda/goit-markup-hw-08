@@ -1,0 +1,38 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.social-list_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color var(--primary-time-duration)
+     ;
+      &:hover,
+      &:focus {
+        background-color: #2196f3;
+        }
+}
+
+.social-list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list_link-img {
+  fill: #afb1b8;
+  transition: fill var(--primary-time-duration)  ;
+    .social-list_link:hover > &,
+    .social-list_link:focus > & {
+      fill: var(--secondary-text-color);
+    }
+}
+
+
+
