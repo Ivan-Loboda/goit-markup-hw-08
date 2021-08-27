@@ -288,9 +288,6 @@ h3 {
   .burger-button {
     display: none;
   }
-  .mobile-menu {
-    display: none;
-  }
 }
 
 .mobile-menu__item:not(:last-child) {
