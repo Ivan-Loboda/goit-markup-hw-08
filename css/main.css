@@ -109,7 +109,7 @@ h3 {
 }
 
 .container {
-  max-width: 100%px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -265,10 +265,12 @@ h3 {
 }
 
 .mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
+  min-height: 800px;
 }
 
 .mobile-menu__close {
@@ -289,10 +291,6 @@ h3 {
   .mobile-menu {
     display: none;
   }
-}
-
-.mobile-menu__nav {
-  margin-bottom: 302px;
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -352,6 +350,30 @@ h3 {
 
 .mobile-social_item:last-child {
   margin-right: -15px;
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-adress_link.number {
+    font-size: 26px;
+  }
+  .mobile-social {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-social_item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mobile-social_item:not(:last-child) {
+    margin-bottom: 10px;
+    border: none;
+  }
+  .mobile-social_item:last-child {
+    margin: 0;
+  }
+  .mobile-social_item:first-child {
+    margin: 0;
+  }
 }
 
 .mobile-social_link {
@@ -463,9 +485,9 @@ h3 {
   background-image: url("../images/icon-check.svg");
 }
 
-@media screen and (max-width: 538px) {
+@media screen and (max-width: 767px) {
   .modal-form_checkbox-label {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -477,18 +499,31 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 96vw;
+  height: 96vh;
+  max-height: 610px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   overflow: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .modal {
     width: 96vw;
     height: 96vh;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
   }
 }
 
