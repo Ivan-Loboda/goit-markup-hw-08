@@ -68,7 +68,7 @@
 }
 
 .portfolio-card_item {
-  background: var(--primary-background-color);
+   background: var(--primary-background-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -81,6 +81,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-card_item {
+    max-width: 354px;
+
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
@@ -102,7 +104,9 @@
 }
 
 .portfolio-card_link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--primary-time-duration);
     &:hover,
     &:focus {
@@ -112,6 +116,7 @@
 }
 
 .portfolio-card_container {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -122,6 +127,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 

@@ -312,10 +312,6 @@ h3 {
   font-size: 34px;
 }
 
-.mobile-adress_list {
-  margin-bottom: 64px;
-}
-
 .mobile-social {
   display: flex;
 }
@@ -329,32 +325,11 @@ h3 {
 }
 
 .mobile-social_item:first-child {
-  pading-left: -15px;
+  padding-left: 0px;
 }
 
 .mobile-social_item:last-child {
-  pading-right: -15px;
-}
-
-@media screen and (max-width: 450px) {
-  .mobile-adress_link.number {
-    font-size: 26px;
-  }
-  .mobile-social {
-    flex-direction: column;
-    align-items: center;
-  }
-  .mobile-social_item {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .mobile-social_item:not(:last-child) {
-    margin-bottom: 10px;
-    border: none;
-  }
-  .mobile-social_item:last-child {
-    margin: 0;
-  }
+  padding-right: 0px;
 }
 
 .mobile-social_link {
@@ -362,6 +337,25 @@ h3 {
   font-weight: 500;
   line-height: 1.2;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-menu__link {
+    font-size: 30px;
+  }
+  .mobile-adress_link {
+    font-size: 20px;
+  }
+  .mobile-adress_link.number {
+    font-size: 24px;
+  }
+  .mobile-social_item {
+    padding: 5px 10px;
+  }
+  .mobile-social_link {
+    font-size: 11px;
+    color: var(--accent-color);
+  }
 }
 
 .modal-form {
@@ -1188,18 +1182,6 @@ h3 {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero.section {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero.section {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero.section {
     max-width: 1600px;
@@ -1406,6 +1388,9 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-card_item {
+    max-width: 354px;
+  }
   .portfolio-card_item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
@@ -1424,7 +1409,9 @@ h3 {
 }
 
 .portfolio-card_link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--primary-time-duration);
 }
 
@@ -1433,6 +1420,7 @@ h3 {
 }
 
 .portfolio-card_container {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1443,6 +1431,7 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
