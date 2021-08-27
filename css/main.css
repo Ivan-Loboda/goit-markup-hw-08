@@ -75,17 +75,10 @@ h3 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1199px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -99,12 +92,6 @@ h3 {
 @media screen and (max-width: 767px) {
   .portfolio-nav.section {
     padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-nav.section {
-    padding-top: 140px;
   }
 }
 
@@ -270,7 +257,7 @@ h3 {
   justify-content: space-between;
   position: relative;
   padding: 48px 40px;
-  min-height: 800px;
+  height: 100%;
 }
 
 .mobile-menu__close {
@@ -342,11 +329,11 @@ h3 {
 }
 
 .mobile-social_item:first-child {
-  margin-left: -15px;
+  pading-left: -15px;
 }
 
 .mobile-social_item:last-child {
-  margin-right: -15px;
+  pading-right: -15px;
 }
 
 @media screen and (max-width: 450px) {
@@ -366,9 +353,6 @@ h3 {
     border: none;
   }
   .mobile-social_item:last-child {
-    margin: 0;
-  }
-  .mobile-social_item:first-child {
     margin: 0;
   }
 }
@@ -475,7 +459,7 @@ h3 {
   border: 1px solid #303030;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .modal-form_checkbox:checked + .modal-form_checkbox-label::before {
@@ -484,7 +468,7 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .modal-form_checkbox-label {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -592,6 +576,12 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .article_sub-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -746,7 +736,7 @@ h3 {
   font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -1206,7 +1196,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .hero.section {
-    max-width: 1200px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1279,12 +1269,13 @@ h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.71;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .team_title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1352,16 +1343,24 @@ h3 {
 @media screen and (min-width: 768px) {
   .portfolio-nav_list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-nav_list {
     margin-bottom: 50px;
   }
 }
 
-.portfolio-nav_item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 15px;
-}
-
 .portfolio-nav_item:not(:nth-last-child(-n + 1)) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-nav_item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-nav_button {
@@ -1387,7 +1386,6 @@ h3 {
   .portfolio-card-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 }
 

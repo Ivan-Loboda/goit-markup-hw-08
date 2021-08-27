@@ -96,7 +96,7 @@
     border: 1px solid #303030;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 6px;
     }
     .modal-form_checkbox:checked + &::before {
     background-image: url("../images/icon-check.svg");
@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 767px) {
   .modal-form_checkbox-label {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

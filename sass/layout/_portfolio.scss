@@ -7,20 +7,33 @@
 @media  screen and (min-width: 768px) {
   .portfolio-nav_list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media  screen and (min-width: 1200px) {
+  .portfolio-nav_list {
     margin-bottom: 50px;
   }
 }
 
 .portfolio-nav_item{
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 15px;
-  }
+  
   &:not(:nth-last-child(-n + 1)) {
     margin-right: 8px;
   }
 }
 
-
+@media screen and (max-width: 767px) {
+  .portfolio-nav_item{
+    &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+  //   &:not(:nth-last-child(-n + 1)) {
+  //   margin-right: 8px;
+  // }
+}
+}
 
 .portfolio-nav_button {
   border: none;
@@ -50,7 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-between;
-    align-items: center;
+    // align-items: center;
   }
 }
 
