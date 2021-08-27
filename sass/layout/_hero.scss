@@ -74,12 +74,27 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .hero.section {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero.section {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero.section {
+    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
+
+
 
 .hero_title {
   
