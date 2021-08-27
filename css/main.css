@@ -51,6 +51,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 ul,
@@ -107,12 +109,18 @@ h3 {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -242,6 +250,7 @@ h3 {
 .mobile-menu {
   position: fixed;
   overflow: auto;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -719,21 +728,21 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .clients-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .clients-list_item:not(:last-child) {
+  .clients-list_item:not(:nth-last-child(odd)) {
+    margin-right: 30px;
+  }
+  .clients-list_item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
-    display: flex;
     flex-wrap: wrap;
   }
 }

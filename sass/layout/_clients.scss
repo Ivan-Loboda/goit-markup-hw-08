@@ -27,9 +27,7 @@
 
 @media screen and (max-width: 767px) {
   .clients-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -40,14 +38,18 @@
   // .clients-list_item:not(:nth-last-child(-n + 2)) {
   //   margin-bottom: 30px;
   // }
-  .clients-list_item:not(:last-child) {
+  
+
+  .clients-list_item:not(:nth-last-child(odd)) {
+    margin-right: 30px;
+  }
+  .clients-list_item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
-    display: flex;
     flex-wrap: wrap;
     // margin-top: -30px;
     // margin-left: -30px;
