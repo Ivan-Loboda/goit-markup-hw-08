@@ -451,8 +451,8 @@ h3 {
 .modal-form_checkbox-label::before {
   display: block;
   content: "";
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
   border: 1px solid #303030;
   border-radius: 4px;
   cursor: pointer;
@@ -461,6 +461,12 @@ h3 {
 
 .modal-form_checkbox:checked + .modal-form_checkbox-label::before {
   background-image: url("../images/icon-check.svg");
+}
+
+@media screen and (max-width: 538px) {
+  .modal-form_checkbox-label {
+    font-size: 12px;
+  }
 }
 
 /* .modal-form_checkbox:focus + .modal-form_checkbox-label::before {
